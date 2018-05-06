@@ -16,8 +16,9 @@ https://www.taniarascia.com/how-to-use-json-data-with-php-or-javascript/
 var request = new XMLHttpRequest();
 
 //Then we’ll open a new connection with the open() method – 
-//in the arguments we’ll specify the type of request as GET as well as the URL of the API endpoint. 
-request.open('GET', 'http://quotes.rest/qod.json', true);
+//in the arguments we’ll specify the type of request as GET as well as the URL of the API endpoint.
+//API endpoint used -  http://quotesondesign.com/wp-json/posts 
+request.open('GET', ' http://quotesondesign.com/wp-json/posts', true);
 
 //The request completes and we can access the data inside the onload function.
 request.onload = function () {
